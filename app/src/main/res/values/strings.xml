@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Virtual Pet</string>
+    <string name="create">Create User</string>
+    <string name="back"><![CDATA[< Back]]></string>
+    <string name="next"><![CDATA[Next >]]></string>
+    <string name="how_will_you_call_your_pet">How will you call your pet?</string>
+    <string name="noname">NoName</string>
+    <string name="collect">Collect</string>
+    <string name="bath">Bath</string>
+</resources>
