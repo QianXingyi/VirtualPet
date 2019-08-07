@@ -20,8 +20,8 @@ public class UserDao {
         try {
             Class.forName("net.sourceforge.jtds.jdbc.Driver");
             conn = DriverManager.getConnection(
-                    "jdbc:microsoft:sqlserver://106.14.176.112:1433;databaseName=virtualpet", "sa",
-                    "websoft9!");
+                    "url", "user",
+                    "password");
         } catch (ClassNotFoundException e1) {
             // TODO Auto-generated catch block
             e1.printStackTrace();
@@ -58,8 +58,8 @@ public class UserDao {
         try {
             Class.forName("net.sourceforge.jtds.jdbc.Driver");
              conn = DriverManager.getConnection(
-                    "jdbc:microsoft:sqlserver://106.14.176.112:1433/virtualpet", "sa",
-                    "websoft9!");
+                     "url", "user",
+                     "password");
         } catch (ClassNotFoundException e) {
             System.out.println("加载驱动程序出错");
         } catch (SQLException e) {
@@ -101,8 +101,8 @@ public class UserDao {
         try {
             Class.forName("net.sourceforge.jtds.jdbc.Driver");
             conn = DriverManager.getConnection(
-                    "jdbc:jtds:sqlserver://106.14.176.112/virtualpet", "sa",
-                    "websoft9!");
+                    "url", "user",
+                    "password");
             pst = conn.prepareStatement(sql);
             pst.setString(1, t.getuName());
             pst.setString(2, t.getuPhone());
@@ -128,8 +128,8 @@ public class UserDao {
         try {
             Class.forName("net.sourceforge.jtds.jdbc.Driver");
             conn = DriverManager.getConnection(
-                    "jdbc:jtds:sqlserver://106.14.176.112/virtualpet", "sa",
-                    "websoft9!");
+                    "url", "user",
+                    "password");
             pst = conn.prepareStatement(sql);
             pst.setString(1, t.getuName());
             pst.setString(2, t.getuPhone());
@@ -151,8 +151,8 @@ public class UserDao {
         try {
             Class.forName("net.sourceforge.jtds.jdbc.Driver");
             conn = DriverManager.getConnection(
-                    "jdbc:jtds:sqlserver://106.14.176.112/virtualpet", "sa",
-                    "websoft9!");
+                    "url", "user",
+                    "password");
             pst = conn.prepareStatement(sql);
             pst.setInt(1, t.getuID());
             result = pst.executeUpdate();
